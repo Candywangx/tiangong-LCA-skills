@@ -319,7 +319,7 @@ const requiredDocPatterns = [
   },
   {
     file: "process-automated-builder/SKILL.md",
-    pattern: /pinned published CLI `?0\.1\.20/iu,
+    pattern: /pinned published CLI `?0\.1\.23/iu,
     message:
       "process-automated-builder should distinguish the pinned published CLI from the merged source behavior (Issue #104).",
   },
