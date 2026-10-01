@@ -19,9 +19,9 @@ checkPaths:
   - scripts/validate-skills.mjs
   - "*/SKILL.md"
   - "*/scripts/**"
-lastReviewedAt: 2026-10-01
-lastReviewedCommit: 5cfd434bd1edcec52f819eeddd22a912932611ee
-lastReviewedNote: 'Reviewed Skills #121 published CLI 0.1.23 wrapper/source identity adoption; the existing Foundry entry release lock remains separate pending successor qualification.'
+lastReviewedAt: 2026-10-02
+lastReviewedCommit: 89c00386d65d8d31b9108576cbc2bf6ad52d5faf
+lastReviewedNote: 'Reviewed Skills #121 verified public Foundry 0.1.14 lock/source and bundled CLI 0.1.23 adoption; C1 bytes, historical release evidence and auth/workspace boundaries remain preserved.'
 ---
 
 # Tiangong LCA Skills
@@ -115,7 +115,7 @@ npx skills add https://github.com/tiangong-lca/agent-skills --skill foundry-tida
 
 The `lca-foundry-workflows` marketplace package lists this entry first. `foundry-tidas-authoring` is an internal role loaded only for a current semantic work item; it is not a second task entry. The ordinary entry can use the runtime's work-item instructions when that internal role is not installed.
 
-The complete entry bundles the final release lock for [Foundry 0.1.13](https://github.com/tiangong-lca/foundry/releases/tag/foundry-runtime-v0.1.13) (release source `bb6ab1c155a41da0bb58c9faf6a73650aa348a1d`), with its bundled CLI 0.1.22, Node 24.19.0 and TIDAS 0.3.3. Its public runtime is qualified for macOS arm64, Linux x64/arm64 and Windows x64. This release supports bound task briefs, immediate human questions, persistent user answers, scoped semantic decision adoption and an honest partial recap. The shared wrappers and hybrid-search packages target published CLI 0.1.23; keep the Foundry entry's own bootstrap scripts/lock separate from those active wrappers, and never read one owner's CLI version as the other's. Keep the bundled scripts and adjacent lock together when installing or copying the entry. Installation and login do not grant permission to write data; continue the task's current authorization and recovery actions.
+The complete entry bundles the final release lock for [Foundry 0.1.14](https://github.com/tiangong-lca/foundry/releases/tag/foundry-runtime-v0.1.14) (release source `56307ddc74565f85cf2e1315231d4f841a800f9b`), with its bundled CLI 0.1.23, Node 24.19.0 and TIDAS 0.3.3. Its public runtime is qualified for macOS arm64, Linux x64/arm64 and Windows x64. This release supports bound task briefs, immediate human questions, persistent user answers, scoped semantic decision adoption and an honest partial recap. The shared wrappers and hybrid-search packages target published CLI 0.1.23; keep the Foundry entry's own bootstrap scripts/lock separate from those active wrappers, and never read one owner's CLI version as the other's. Keep the bundled scripts and adjacent lock together when installing or copying the entry. Installation and login do not grant permission to write data; continue the task's current authorization and recovery actions.
 
 ### Specialized workflows
 
@@ -158,7 +158,7 @@ The three hybrid-search skill folders are independently installable: each includ
   ```bash
   pnpm validate lifecycleinventory-qa process-hybrid-search
   ```
-- CI runs the same validation in `.github/workflows/validate-skills.yml` after checking out immutable active CLI commit `418900f90e2590e5376152f39b5625276a56ff2d` (published package 0.1.23), installing both repositories with frozen pnpm lockfiles, and building the CLI. The Foundry entry's bootstrap is tested against its own qualified 0.1.13 release lock and its bundled CLI 0.1.22.
+- CI runs the same validation in `.github/workflows/validate-skills.yml` after checking out immutable active CLI commit `418900f90e2590e5376152f39b5625276a56ff2d` (published package 0.1.23), installing both repositories with frozen pnpm lockfiles, and building the CLI. The Foundry entry's bootstrap is tested against its own qualified 0.1.14 release lock and its bundled CLI 0.1.23.
 
 ## Execution note
 
