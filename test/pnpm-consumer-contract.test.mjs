@@ -179,7 +179,7 @@ test('validation CI installs the exact CLI checkout through frozen pnpm only', (
   const workflow = read('.github/workflows/validate-skills.yml');
 
   assert.match(workflow, /repository: tiangong-lca\/cli/u);
-  assert.match(workflow, /ref: 418900f90e2590e5376152f39b5625276a56ff2d/u);
+  assert.match(workflow, /ref: 89c71772ca1afcfc09705f8c27a9703c6bf8ccf6/u);
   assert.match(
     workflow,
     /uses: pnpm\/setup@84cb39b217b10273981911c288cd62326dc7c6d2/u,
